@@ -1,0 +1,41 @@
+spriteTypes = {	
+###FREDDY
+	spriteType = { 
+     name = "GFX_unit_freddy_fazbear_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_freddy_fazbear_icon.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+   
+   spriteType = { 
+     name = "GFX_unit_freddy_fazbear_icon_medium_white"						
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_freddy_fazbear_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = {
+     name = "GFX_unit_freddy_fazbear_icon_small"
+     texturefile = "gfx/texticons/unit_freddy_fazbear_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+   
+###FISHMAN
+   spriteType = { 
+     name = "GFX_unit_fishman_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_fishman_icon.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+   
+   spriteType = { 
+     name = "GFX_unit_fishman_icon_medium_white"						
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fishman_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = {
+     name = "GFX_unit_fishman_icon_small"
+     texturefile = "gfx/texticons/unit_fishman_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+}

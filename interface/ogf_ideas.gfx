@@ -1,0 +1,575 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_ogf_idea_isolation"
+		texturefile = "gfx/interface/ideas/ogf_idea_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_isolation_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_isolation_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_isolation_3"
+		texturefile = "gfx/interface/ideas/ogf_idea_isolation_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_giant_awoken"
+		texturefile = "gfx/interface/ideas/ogf_idea_giant_awoken.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_ideas_aggressive"
+		texturefile = "gfx/interface/ideas/ogf_ideas_aggressive.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_ideas_aggressive_major"
+		texturefile = "gfx/interface/ideas/ogf_ideas_aggressive_major.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_peacekeeper"
+		texturefile = "gfx/interface/ideas/ogf_idea_peacekeeper.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_desperate_research"
+		texturefile = "gfx/interface/ideas/ogf_idea_desperate_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_desperate_mobilisation"
+		texturefile = "gfx/interface/ideas/ogf_idea_desperate_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_desperate_defense"
+		texturefile = "gfx/interface/ideas/ogf_idea_desperate_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_defat"
+		texturefile = "gfx/interface/ideas/ogf_idea_defat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_victory"
+		texturefile = "gfx/interface/ideas/ogf_idea_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_speed"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_armor"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_acquire_tanks"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_acquire_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_gun"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_chi_army_corruption"
+		texturefile = "gfx/interface/ideas/ogf_idea_chi_army_corruption.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_chi_army_corruption2"
+		texturefile = "gfx/interface/ideas/ogf_idea_chi_army_corruption2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_chi_army_corruption3"
+		texturefile = "gfx/interface/ideas/ogf_idea_chi_army_corruption3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mex_revolutionary_army"
+		texturefile = "gfx/interface/ideas/ogf_idea_mex_revolutionary_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_army_war_college"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_army_war_college.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_women_in_the_army"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_women_in_the_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_artillery_regiments"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_artillery_regiments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_FRA_motorized_focus"
+		texturefile = "gfx/interface/ideas/ogf_FRA_motorized_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_build_infrastructure"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_build_infrastructure.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_eng_special_air_service"
+		texturefile = "gfx/interface/ideas/ogf_idea_eng_special_air_service.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_army_special_forces"
+		texturefile = "gfx/interface/ideas/ogf_idea_army_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_army_best_of_best"
+		texturefile = "gfx/interface/ideas/ogf_idea_army_best_of_best.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_army_mecha"
+		texturefile = "gfx/interface/ideas/ogf_idea_army_mecha.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_license_production"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_license_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_art_boom"
+		texturefile = "gfx/interface/ideas/ogf_idea_art_boom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_art_boom_biggest"
+		texturefile = "gfx/interface/ideas/ogf_idea_art_boom_biggest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_supply_depot"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_supply_depot.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_army_gun_diverse_1"
+		texturefile = "gfx/interface/ideas/ogf_idea_army_gun_diverse.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_army_gun_diverse_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_army_gun_diverse_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_concentrate"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_concentrate.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_concentrate_fist"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_concentrate_fist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_support"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_tank_guardian"
+		texturefile = "gfx/interface/ideas/ogf_idea_tank_guardian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_marines"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_marines.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_marines_tank"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_marines_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_marines_convoy"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_marines_convoy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_defense"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_defense_ship"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_defense_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_production"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_production_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_production_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_production_3"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_production_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_armor"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_armor_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_armor_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_speed"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_speed_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_speed_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_gun"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_gun_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_gun_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_cheap"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_cheap.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_navy_cheap_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_navy_cheap_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_electronics_boat"
+		texturefile = "gfx/interface/ideas/ogf_idea_electronics_boat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_electronics_research"
+		texturefile = "gfx/interface/ideas/ogf_idea_electronics_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_electronics_plane"
+		texturefile = "gfx/interface/ideas/ogf_idea_electronics_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_electronics_radio"
+		texturefile = "gfx/interface/ideas/ogf_idea_electronics_radio.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_electronics_radar"
+		texturefile = "gfx/interface/ideas/ogf_idea_electronics_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_electronics_animatronics"
+		texturefile = "gfx/interface/ideas/ogf_idea_electronics_animatronics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_equipment"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_equipment_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_equipment_boat"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_equipment_boat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_equipment_tank"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_equipment_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_training"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_building"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_building.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_anti_air_plane"
+		texturefile = "gfx/interface/ideas/ogf_idea_anti_air_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_fighter"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_bomber"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_naval_bomber"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_naval_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_quality"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_quality.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_quantity"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_quantity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_gun"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_shield"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_range"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_range.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_rocket"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_rocket.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_air_jet"
+		texturefile = "gfx/interface/ideas/ogf_idea_air_jet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_infrastructure"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_infrastructure.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_extraction"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_extraction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_production_innovation"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_production_innovation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_mil_deregulation"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_mil_deregulation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_civ_construct"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_civ_construct.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_civ_toaster"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_civ_toaster.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_civ_route"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_civ_route.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_mil_route"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_mil_route.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_generic_communism_drift_bonus"
+		texturefile = "gfx/interface/ideas/ogf_generic_communism_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_generic_democratic_drift_bonus"
+		texturefile = "gfx/interface/ideas/ogf_generic_democratic_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_neutrality_drift_bonus"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_neutrality_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_generic_fascism_drift_bonus"
+		texturefile = "gfx/interface/ideas/ogf_generic_fascism_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_fascism_drift_2"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_fascism_drift_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_neutrality_dem_drift_bonus"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_neutrality_dem_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_rail_nationalised"
+		texturefile = "gfx/interface/ideas/ogf_idea_rail_nationalised.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_industry_nationalised"
+		texturefile = "gfx/interface/ideas/ogf_idea_industry_nationalised.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_com_industry_expansion"
+		texturefile = "gfx/interface/ideas/ogf_idea_com_industry_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_com_friends"
+		texturefile = "gfx/interface/ideas/ogf_idea_com_friends.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_com_paradise"
+		texturefile = "gfx/interface/ideas/ogf_idea_com_paradise.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_saf_soviet_advisers"
+		texturefile = "gfx/interface/ideas/ogf_idea_saf_soviet_advisers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_SOV_war_heroes"
+		texturefile = "gfx/interface/ideas/ogf_idea_SOV_war_heroes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_SOV_stakhanovite_movement"
+		texturefile = "gfx/interface/ideas/ogf_idea_SOV_stakhanovite_movement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_sov_state_welfare"
+		texturefile = "gfx/interface/ideas/ogf_idea_sov_state_welfare.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_sov_state_socialism"
+		texturefile = "gfx/interface/ideas/ogf_idea_sov_state_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_social_democracy"
+		texturefile = "gfx/interface/ideas/ogf_idea_social_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_social_scientists"
+		texturefile = "gfx/interface/ideas/ogf_idea_social_scientists.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_social_empowered"
+		texturefile = "gfx/interface/ideas/ogf_idea_social_empowered.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_social_equiality_serve"
+		texturefile = "gfx/interface/ideas/ogf_idea_social_equiality_serve.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_can_wartime_prices_and_trade_board"
+		texturefile = "gfx/interface/ideas/ogf_idea_can_wartime_prices_and_trade_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_dem_freedom_speech"
+		texturefile = "gfx/interface/ideas/ogf_idea_dem_freedom_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_dem_neutral"
+		texturefile = "gfx/interface/ideas/ogf_idea_dem_neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_dem_wartime_innovators"
+		texturefile = "gfx/interface/ideas/ogf_idea_dem_wartime_innovators.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_dem_hedgehog_nation"
+		texturefile = "gfx/interface/ideas/ogf_idea_dem_hedgehog_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_supply_lines"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_supply_lines.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_ast_volunteer_defence_corps"
+		texturefile = "gfx/interface/ideas/ogf_idea_ast_volunteer_defence_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_dem_intervention"
+		texturefile = "gfx/interface/ideas/ogf_idea_dem_intervention.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_hun_hungarian_monarchy_democratic"
+		texturefile = "gfx/interface/ideas/ogf_idea_hun_hungarian_monarchy_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_dem_royal_guard"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_dem_royal_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_dem_socialiser"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_dem_socialiser.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_dem_king"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_dem_king.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_dem_tolerance"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_dem_tolerance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_dem_deterrence"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_dem_deterrence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_legit"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_legit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_one_people"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_one_people.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_king_faith"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_king_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_king_handled"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_king_handled.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_our_empire"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_our_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_mon_for_empire"
+		texturefile = "gfx/interface/ideas/ogf_idea_mon_for_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_mon_council"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_mon_council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_mon_elite_council"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_mon_elite_council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_mon_new_guard"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_mon_new_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_mon_expansion"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_mon_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_mon_conspiracy"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_mon_conspiracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_mon_xeno"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_mon_xeno.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_generic_fascist_workers"
+		texturefile = "gfx/interface/ideas/ogf_idea_generic_fascist_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_supress"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_supress.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_militarism"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_militarism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_enemy_within"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_enemy_within.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_world_against"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_world_against.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_cornered_snake"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_cornered_snake.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_next_door"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_next_door.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_armor"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_fas_methods"
+		texturefile = "gfx/interface/ideas/ogf_idea_fas_methods.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_person_fishman_speaker"
+		texturefile = "gfx/interface/ideas/ogf_person_fishman_speaker.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ogf_idea_hol_prepare_the_inundation_lines"
+		texturefile = "gfx/interface/ideas/ogf_idea_hol_prepare_the_inundation_lines.dds"
+	}
+}

@@ -1,0 +1,5 @@
+# Give all countries the equal footing tech at game start
+add_tech = {
+    equal_footing_tech
+}
+# Optionally, add starting units here as well

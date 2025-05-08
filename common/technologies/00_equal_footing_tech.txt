@@ -1,0 +1,20 @@
+equal_footing_tech = {
+    # Infantry
+    infantry_weapons = { allow = yes }
+    support_weapons = { allow = yes }
+    # Armor
+    basic_light_tank = { allow = yes }
+    # Artillery
+    basic_artillery = { allow = yes }
+    # Air
+    basic_fighter = { allow = yes }
+    basic_bomber = { allow = yes }
+    # Naval
+    basic_destroyer = { allow = yes }
+    basic_submarine = { allow = yes }
+    basic_cruiser = { allow = yes }
+    # Support
+    engineer_company = { allow = yes }
+    recon_company = { allow = yes }
+    # Add more as needed for your mod
+}

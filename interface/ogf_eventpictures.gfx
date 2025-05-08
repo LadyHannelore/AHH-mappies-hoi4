@@ -1,0 +1,30 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_freddy"
+		texturefile = "gfx/event_pictures/news_event_freddy.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_eldritch_1"
+		texturefile = "gfx/event_pictures/news_event_eldritch_1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_eldritch_2"
+		texturefile = "gfx/event_pictures/news_event_eldritch_2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_eldritch_3"
+		texturefile = "gfx/event_pictures/news_event_eldritch_3.dds"
+	}
+	spriteType = {
+		name = "GFX_event_aib_facility"
+		texturefile = "gfx/event_pictures/report_event_aib.dds"
+	}
+	spriteType = {
+		name = "GFX_ogf_sign"
+		texturefile = "gfx/event_pictures/report_event_ogf_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_event_aib_shooting"
+		texturefile = "gfx/event_pictures/report_event_aib_scientist.dds"
+	}
+}

@@ -1,0 +1,46 @@
+capital = 1 # TODO: Replace with correct state ID for Bordeaux
+oob = "MON_1936"
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = yes
+    last_election = "1935.1.1"
+    election_frequency = 48
+}
+set_country_flag = MON_country_exists
+
+create_unit = {
+    division_name = "1th Infantry Division"
+    division_template = "Infantry Division"
+    start_experience_factor = 0.3
+    owner = MON
+    division = {
+        infantry = 9
+    }
+}
+create_unit = {
+    division_name = "2th Infantry Division"
+    division_template = "Infantry Division"
+    start_experience_factor = 0.3
+    owner = MON
+    division = {
+        infantry = 9
+    }
+}
+create_unit = {
+    division_name = "3th Infantry Division"
+    division_template = "Infantry Division"
+    start_experience_factor = 0.3
+    owner = MON
+    division = {
+        infantry = 9
+    }
+}
+create_unit = {
+    division_name = "4th Infantry Division"
+    division_template = "Infantry Division"
+    start_experience_factor = 0.3
+    owner = MON
+    division = {
+        infantry = 9
+    }
+}

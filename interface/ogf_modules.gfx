@@ -1,0 +1,222 @@
+SpriteTypes = {
+	
+###GROUND###
+	
+	spriteType = {
+		name = "GFX_EMI_ogf_test_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_test_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ogf_flesh_engine"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flesh_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_living_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_living_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_flesh_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flesh_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_bilespewer"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_bilespewer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_organic_sensor_suite"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_organic_sensor_suite.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_fanged_mouth"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fanged_mouth.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_protection_field"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/protection_field.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_psi_lance"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/psi_lance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_psi_lance"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_psi_lance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_small_psi_lance"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/small_psi_lance.dds"
+		legacy_lazy_load = no
+	}
+	
+###NAVAL###
+	
+	spriteType = {
+		name = "GFX_EMI_light_living_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/living_engine_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cruiser_living_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/living_engine_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_living_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/living_engine_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_carrier_living_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/living_engine_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_sub_living_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/living_engine_icn.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ocular_sensors"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ocular_sensors.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_consciousness_targeter"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_consciousness_probe.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_deflection_field"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_deflection_field.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_light_psi"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_light_psi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_medium_light_psi"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_light_psi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_medium_heavy_psi"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_heavy_psi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_psi"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_psi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_gaping_maw"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_gaping_maw.dds"
+		legacy_lazy_load = no
+	}
+	
+### MEGA MODULES ###
+	
+	spriteType = {
+		name = "GFX_EMI_mega_aircraft_deck"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_aircraft_deck.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_battleship_armor"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_battleship_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_battlecruiser_armor"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_battlecruiser_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_cruiser_armor"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_cruiser_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_heavy_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_heavy_battery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_medium_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_medium_battery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_radar"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_radar.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_fire_control"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_fire_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_secondaries"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_secondaries.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_torpedo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mega_aa"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mega_aa.dds"
+		legacy_lazy_load = no
+	}
+	
+###AIR###
+	
+	spriteType = {
+		name = "GFX_EMI_living_wings"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_living_wings_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_psi_lance_x1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/psi_lance_x1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_psi_lance_x2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/psi_lance_x2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_consciousness_probe"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_consciousness_probe.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	
+}

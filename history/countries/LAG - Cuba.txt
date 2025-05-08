@@ -1,0 +1,19 @@
+capital = 1 # TODO: Replace with correct state ID for Havana
+oob = "LAG_1936"
+set_politics = {
+    ruling_party = neutrality
+    elections_allowed = yes
+    last_election = "1935.1.1"
+    election_frequency = 48
+}
+set_country_flag = LAG_country_exists
+
+create_unit = {
+    division_name = "1th Infantry Division"
+    division_template = "Infantry Division"
+    start_experience_factor = 0.3
+    owner = LAG
+    division = {
+        infantry = 9
+    }
+}

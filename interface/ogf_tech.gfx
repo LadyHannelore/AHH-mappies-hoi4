@@ -1,0 +1,94 @@
+SpriteTypes = {
+	spriteType = {
+		name = GFX_aib_briefcase_tech_medium
+		texturefile = gfx/interface/technologies/ogf_sachel_briefcase.dds
+	}
+	spriteType = {
+		name = GFX_aib_sachel_tech_medium
+		texturefile = gfx/interface/technologies/ogf_sachel_briefcase.dds
+	}
+	spriteType = {
+		name = GFX_fleshtech_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_fleshtech_melee_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_fleshtech_engines_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_fleshtech_advanced_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_fleshtech_begin_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_psitech_medium
+		texturefile = gfx/interface/technologies/psitech.dds
+	}
+	spriteType = {
+		name = GFX_psitech_begin_medium
+		texturefile = gfx/interface/technologies/psitech.dds
+	}
+	spriteType = {
+		name = GFX_psilance_1_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_psilance_2_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_psitech_advanced_medium
+		texturefile = gfx/interface/technologies/fleshtech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_fishman_tech_0_medium
+		texturefile = gfx/interface/technologies/fishtech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_fishman_tech_1_medium
+		texturefile = gfx/interface/technologies/fishtech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_fishman_tech_2_medium
+		texturefile = gfx/interface/technologies/fishtech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_fishman_tech_3_medium
+		texturefile = gfx/interface/technologies/fishtech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_fishman_tech_4_medium
+		texturefile = gfx/interface/technologies/fishtech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_freddy_tech_medium
+		texturefile = gfx/interface/technologies/freddytech.dds
+	}
+	spriteType = {
+		name = GFX_ogf_mechamax_medium
+		texturefile = gfx/interface/technologies/ogf_mechanized_equipment.dds
+	}
+	spriteType = {
+		name = GFX_ogf_mecharocket_medium
+		texturefile = gfx/interface/technologies/ogf_mechanized_rocket_equipment.dds
+	}
+	spriteType = {
+		name = GFX_ogf_art_mecha_medium
+		texturefile = gfx/interface/technologies/ogf_big_bertha.dds
+	}
+	spriteType = {
+		name = GFX_ogf_transport_two_medium
+		texturefile = gfx/interface/technologies/ogf_transport_2.dds
+	}
+	spriteType = {
+		name = GFX_ogf_infantry_eq_4_medium
+		texturefile = gfx/interface/technologies/ogf_infantry3.dds
+	}
+}

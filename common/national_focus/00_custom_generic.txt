@@ -1,0 +1,365 @@
+focus_tree = {
+	id = custom_generic_focus
+	country = { always = yes }
+	default = yes
+
+	# --- Political Branch ---
+	focus = {
+		id = NATIONAL_IDENTITY
+		icon = GFX_goal_generic_political_reform
+		x = 0 y = 0
+		cost = 10
+		available = { always = yes }
+		completion_reward = { }
+	}
+
+	# Ideology Sub-Branch
+	focus = {
+		id = STRENGTHEN_COMMUNISM
+		icon = GFX_goal_generic_communism
+		x = -2 y = 1
+		prerequisite = { focus = NATIONAL_IDENTITY }
+		cost = 10
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = communism_support_idea
+		}
+	}
+	focus = {
+		id = FORTIFY_DEMOCRACY
+		icon = GFX_goal_generic_democracy
+		x = 0 y = 1
+		prerequisite = { focus = NATIONAL_IDENTITY }
+		cost = 10
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = democracy_support_idea
+		}
+	}
+	focus = {
+		id = EMBRACE_FASCISM
+		icon = GFX_goal_generic_fascism
+		x = 2 y = 1
+		prerequisite = { focus = NATIONAL_IDENTITY }
+		cost = 10
+		completion_reward = {
+			add_mobilization_speed = 0.10
+			add_ideas = fascism_support_idea
+		}
+	}
+	// ...Party Propaganda, Revolutionary Zeal, Authoritarian Reform...
+
+	# Internal Affairs Sub-Branch
+	focus = {
+		id = EXPAND_SECRET_POLICE
+		icon = GFX_goal_generic_intelligence_exchange
+		x = -1 y = 2
+		prerequisite = { focus = NATIONAL_IDENTITY }
+		cost = 10
+		completion_reward = {
+			add_resistance_growth = -0.10
+			add_intel_defense = 0.05
+		}
+	}
+	focus = {
+		id = WELFARE_PROGRAMS
+		icon = GFX_goal_generic_healthcare
+		x = -1 y = 3
+		prerequisite = { focus = EXPAND_SECRET_POLICE }
+		cost = 10
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = consumer_goods_reduction_idea
+		}
+	}
+	// ...more focuses...
+
+	# Add 10 more generic political focuses
+	focus = { id = POLITICAL_FOCUS_1 icon = GFX_goal_generic_political_reform x = 0 y = 4 prerequisite = { focus = WELFARE_PROGRAMS } cost = 10 completion_reward = { add_stability = 0.01 } }
+	focus = { id = POLITICAL_FOCUS_2 icon = GFX_goal_generic_political_reform x = 0 y = 5 prerequisite = { focus = POLITICAL_FOCUS_1 } cost = 10 completion_reward = { add_war_support = 0.01 } }
+	focus = { id = POLITICAL_FOCUS_3 icon = GFX_goal_generic_political_reform x = 0 y = 6 prerequisite = { focus = POLITICAL_FOCUS_2 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = POLITICAL_FOCUS_4 icon = GFX_goal_generic_political_reform x = 0 y = 7 prerequisite = { focus = POLITICAL_FOCUS_3 } cost = 10 completion_reward = { add_stability = 0.01 } }
+	focus = { id = POLITICAL_FOCUS_5 icon = GFX_goal_generic_political_reform x = 0 y = 8 prerequisite = { focus = POLITICAL_FOCUS_4 } cost = 10 completion_reward = { add_war_support = 0.01 } }
+	focus = { id = POLITICAL_FOCUS_6 icon = GFX_goal_generic_political_reform x = 0 y = 9 prerequisite = { focus = POLITICAL_FOCUS_5 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = POLITICAL_FOCUS_7 icon = GFX_goal_generic_political_reform x = 0 y = 10 prerequisite = { focus = POLITICAL_FOCUS_6 } cost = 10 completion_reward = { add_stability = 0.01 } }
+	focus = { id = POLITICAL_FOCUS_8 icon = GFX_goal_generic_political_reform x = 0 y = 11 prerequisite = { focus = POLITICAL_FOCUS_7 } cost = 10 completion_reward = { add_war_support = 0.01 } }
+	focus = { id = POLITICAL_FOCUS_9 icon = GFX_goal_generic_political_reform x = 0 y = 12 prerequisite = { focus = POLITICAL_FOCUS_8 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = POLITICAL_FOCUS_10 icon = GFX_goal_generic_political_reform x = 0 y = 13 prerequisite = { focus = POLITICAL_FOCUS_9 } cost = 10 completion_reward = { add_stability = 0.01 } }
+
+	# --- Military Branch ---
+	# Army Sub-Branch
+	focus = {
+		id = ARMY_REFORM
+		icon = GFX_goal_generic_army_doctrines
+		x = 5 y = 0
+		cost = 10
+		completion_reward = { }
+	}
+	focus = {
+		id = INFANTRY_MODERNIZATION
+		icon = GFX_goal_generic_army_artillery
+		x = 5 y = 1
+		prerequisite = { focus = ARMY_REFORM }
+		cost = 10
+		completion_reward = {
+			# Unlock Improved Infantry Equipment tech
+			add_tech_bonus = {
+				name = improved_infantry_equipment
+				bonus = 1.0
+				uses = 1
+			}
+			add_modifier = { infantry_attack = 0.10 }
+		}
+	}
+	// ...Blitzkrieg Doctrine, Armored Divisions, etc...
+
+	focus = {
+		id = ARMORED_DIVISIONS
+		icon = GFX_goal_generic_army_tank
+		x = 5 y = 2
+		prerequisite = { focus = ADVANCED_TANK_FACTORIES focus = INFANTRY_MODERNIZATION }
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_tech
+				bonus = 1.0
+				uses = 1
+			}
+		}
+	}
+
+	# Add 10 more generic military focuses
+	focus = { id = MILITARY_FOCUS_1 icon = GFX_goal_generic_army_doctrines x = 5 y = 3 prerequisite = { focus = ARMORED_DIVISIONS } cost = 10 completion_reward = { army_experience = 10 } }
+	focus = { id = MILITARY_FOCUS_2 icon = GFX_goal_generic_army_doctrines x = 5 y = 4 prerequisite = { focus = MILITARY_FOCUS_1 } cost = 10 completion_reward = { add_tech_bonus = { name = land_doctrine bonus = 0.5 uses = 1 } } }
+	focus = { id = MILITARY_FOCUS_3 icon = GFX_goal_generic_army_doctrines x = 5 y = 5 prerequisite = { focus = MILITARY_FOCUS_2 } cost = 10 completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 } } }
+	focus = { id = MILITARY_FOCUS_4 icon = GFX_goal_generic_army_doctrines x = 5 y = 6 prerequisite = { focus = MILITARY_FOCUS_3 } cost = 10 completion_reward = { add_manpower = 10000 } }
+	focus = { id = MILITARY_FOCUS_5 icon = GFX_goal_generic_army_doctrines x = 5 y = 7 prerequisite = { focus = MILITARY_FOCUS_4 } cost = 10 completion_reward = { add_tech_bonus = { name = support_tech bonus = 0.5 uses = 1 } } }
+	focus = { id = MILITARY_FOCUS_6 icon = GFX_goal_generic_army_doctrines x = 5 y = 8 prerequisite = { focus = MILITARY_FOCUS_5 } cost = 10 completion_reward = { army_experience = 10 } }
+	focus = { id = MILITARY_FOCUS_7 icon = GFX_goal_generic_army_doctrines x = 5 y = 9 prerequisite = { focus = MILITARY_FOCUS_6 } cost = 10 completion_reward = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 } } }
+	focus = { id = MILITARY_FOCUS_8 icon = GFX_goal_generic_army_doctrines x = 5 y = 10 prerequisite = { focus = MILITARY_FOCUS_7 } cost = 10 completion_reward = { add_manpower = 10000 } }
+	focus = { id = MILITARY_FOCUS_9 icon = GFX_goal_generic_army_doctrines x = 5 y = 11 prerequisite = { focus = MILITARY_FOCUS_8 } cost = 10 completion_reward = { add_tech_bonus = { name = armor_tech bonus = 0.5 uses = 1 } } }
+	focus = { id = MILITARY_FOCUS_10 icon = GFX_goal_generic_army_doctrines x = 5 y = 12 prerequisite = { focus = MILITARY_FOCUS_9 } cost = 10 completion_reward = { army_experience = 10 } }
+
+	# Navy Sub-Branch
+	focus = {
+		id = NAVAL_REARMAMENT
+		icon = GFX_goal_generic_navy_doctrines
+		x = 7 y = 0
+		cost = 10
+		completion_reward = { }
+	}
+	focus = {
+		id = CAPITAL_SHIP_EXPANSION
+		icon = GFX_goal_generic_build_navy
+		x = 7 y = 1
+		prerequisite = { focus = NAVAL_REARMAMENT }
+		cost = 10
+		completion_reward = {
+			add_building_construction = { type = dockyard level = 2 instant_build = yes }
+			add_equipment_production_modifier = { type = capital_ship build_cost_ic = -0.10 }
+		}
+	}
+	// ...Submarine Warfare, etc...
+
+	# --- Economic Branch ---
+	focus = {
+		id = ECONOMIC_MOBILIZATION
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10 y = 0
+		cost = 10
+		completion_reward = { }
+	}
+	focus = {
+		id = FIVE_YEAR_PLAN
+		icon = GFX_goal_generic_construct_factory
+		x = 10 y = 1
+		prerequisite = { focus = ECONOMIC_MOBILIZATION }
+		cost = 10
+		completion_reward = {
+			add_ideas = factory_output_idea
+			add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+		}
+	}
+	focus = {
+		id = RESOURCE_EXTRACTION
+		icon = GFX_goal_generic_resources
+		x = 11 y = 1
+		prerequisite = { focus = ECONOMIC_MOBILIZATION }
+		cost = 10
+		completion_reward = {
+			add_resource_gain_efficiency = 0.20
+		}
+	}
+	// ...more focuses...
+
+	# Add 10 more generic economic focuses
+	focus = { id = ECONOMIC_FOCUS_1 icon = GFX_goal_generic_construct_factory x = 10 y = 2 prerequisite = { focus = RESOURCE_EXTRACTION } cost = 10 completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	focus = { id = ECONOMIC_FOCUS_2 icon = GFX_goal_generic_construct_factory x = 10 y = 3 prerequisite = { focus = ECONOMIC_FOCUS_1 } cost = 10 completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	focus = { id = ECONOMIC_FOCUS_3 icon = GFX_goal_generic_construct_factory x = 10 y = 4 prerequisite = { focus = ECONOMIC_FOCUS_2 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = ECONOMIC_FOCUS_4 icon = GFX_goal_generic_construct_factory x = 10 y = 5 prerequisite = { focus = ECONOMIC_FOCUS_3 } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.05 } }
+	focus = { id = ECONOMIC_FOCUS_5 icon = GFX_goal_generic_construct_factory x = 10 y = 6 prerequisite = { focus = ECONOMIC_FOCUS_4 } cost = 10 completion_reward = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } } }
+	focus = { id = ECONOMIC_FOCUS_6 icon = GFX_goal_generic_construct_factory x = 10 y = 7 prerequisite = { focus = ECONOMIC_FOCUS_5 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = ECONOMIC_FOCUS_7 icon = GFX_goal_generic_construct_factory x = 10 y = 8 prerequisite = { focus = ECONOMIC_FOCUS_6 } cost = 10 completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	focus = { id = ECONOMIC_FOCUS_8 icon = GFX_goal_generic_construct_factory x = 10 y = 9 prerequisite = { focus = ECONOMIC_FOCUS_7 } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.05 } }
+	focus = { id = ECONOMIC_FOCUS_9 icon = GFX_goal_generic_construct_factory x = 10 y = 10 prerequisite = { focus = ECONOMIC_FOCUS_8 } cost = 10 completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	focus = { id = ECONOMIC_FOCUS_10 icon = GFX_goal_generic_construct_factory x = 10 y = 11 prerequisite = { focus = ECONOMIC_FOCUS_9 } cost = 10 completion_reward = { add_political_power = 50 } }
+
+	# --- Diplomatic Branch ---
+	focus = {
+		id = DIPLOMATIC_OUTREACH
+		icon = GFX_goal_generic_diplomacy
+		x = 13 y = 0
+		cost = 10
+		completion_reward = { }
+	}
+	focus = {
+		id = FORM_REGIONAL_ALLIANCE
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13 y = 1
+		prerequisite = { focus = DIPLOMATIC_OUTREACH }
+		cost = 10
+		completion_reward = {
+			add_opinion_modifier = { target = ROOT value = 50 }
+			add_claim_by = { state = neighboring_states }
+		}
+	}
+	focus = {
+		id = DEMAND_TERRITORIAL_CONCESSIONS
+		icon = GFX_goal_generic_territory_or_war
+		x = 14 y = 1
+		prerequisite = { focus = DIPLOMATIC_OUTREACH }
+		cost = 10
+		completion_reward = {
+			add_wargoal = { type = annex_everything target = neighboring_nation }
+		}
+	}
+	// ...more focuses...
+
+	# Add 10 more generic diplomatic focuses
+	focus = { id = DIPLOMATIC_FOCUS_1 icon = GFX_goal_generic_diplomacy x = 13 y = 2 prerequisite = { focus = DEMAND_TERRITORIAL_CONCESSIONS } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = DIPLOMATIC_FOCUS_2 icon = GFX_goal_generic_diplomacy x = 13 y = 3 prerequisite = { focus = DIPLOMATIC_FOCUS_1 } cost = 10 completion_reward = { add_opinion_modifier = { target = ROOT value = 10 } } }
+	focus = { id = DIPLOMATIC_FOCUS_3 icon = GFX_goal_generic_diplomacy x = 13 y = 4 prerequisite = { focus = DIPLOMATIC_FOCUS_2 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = DIPLOMATIC_FOCUS_4 icon = GFX_goal_generic_diplomacy x = 13 y = 5 prerequisite = { focus = DIPLOMATIC_FOCUS_3 } cost = 10 completion_reward = { add_opinion_modifier = { target = ROOT value = 10 } } }
+	focus = { id = DIPLOMATIC_FOCUS_5 icon = GFX_goal_generic_diplomacy x = 13 y = 6 prerequisite = { focus = DIPLOMATIC_FOCUS_4 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = DIPLOMATIC_FOCUS_6 icon = GFX_goal_generic_diplomacy x = 13 y = 7 prerequisite = { focus = DIPLOMATIC_FOCUS_5 } cost = 10 completion_reward = { add_opinion_modifier = { target = ROOT value = 10 } } }
+	focus = { id = DIPLOMATIC_FOCUS_7 icon = GFX_goal_generic_diplomacy x = 13 y = 8 prerequisite = { focus = DIPLOMATIC_FOCUS_6 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = DIPLOMATIC_FOCUS_8 icon = GFX_goal_generic_diplomacy x = 13 y = 9 prerequisite = { focus = DIPLOMATIC_FOCUS_7 } cost = 10 completion_reward = { add_opinion_modifier = { target = ROOT value = 10 } } }
+	focus = { id = DIPLOMATIC_FOCUS_9 icon = GFX_goal_generic_diplomacy x = 13 y = 10 prerequisite = { focus = DIPLOMATIC_FOCUS_8 } cost = 10 completion_reward = { add_political_power = 50 } }
+	focus = { id = DIPLOMATIC_FOCUS_10 icon = GFX_goal_generic_diplomacy x = 13 y = 11 prerequisite = { focus = DIPLOMATIC_FOCUS_9 } cost = 10 completion_reward = { add_opinion_modifier = { target = ROOT value = 10 } } }
+
+	# --- Technology Branch ---
+	focus = {
+		id = ADVANCED_RESEARCH_LABS
+		icon = GFX_goal_generic_scientific
+		x = 16 y = 0
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = ATOMIC_RESEARCH_PROGRAM
+		icon = GFX_goal_generic_nuclear
+		x = 16 y = 1
+		prerequisite = { focus = ADVANCED_RESEARCH_LABS }
+		cost = 10
+		completion_reward = {
+			add_tech = nuclear_bomb
+		}
+	}
+	// ...Jet Tech, etc...
+
+	# Add 10 more generic technology focuses
+	focus = { id = TECH_FOCUS_1 icon = GFX_goal_generic_scientific x = 16 y = 2 prerequisite = { focus = ATOMIC_RESEARCH_PROGRAM } cost = 10 completion_reward = { add_research_slot = 1 } }
+	focus = { id = TECH_FOCUS_2 icon = GFX_goal_generic_scientific x = 16 y = 3 prerequisite = { focus = TECH_FOCUS_1 } cost = 10 completion_reward = { add_tech_bonus = { name = electronics_bonus bonus = 0.5 uses = 1 } } }
+	focus = { id = TECH_FOCUS_3 icon = GFX_goal_generic_scientific x = 16 y = 4 prerequisite = { focus = TECH_FOCUS_2 } cost = 10 completion_reward = { add_research_slot = 1 } }
+	focus = { id = TECH_FOCUS_4 icon = GFX_goal_generic_scientific x = 16 y = 5 prerequisite = { focus = TECH_FOCUS_3 } cost = 10 completion_reward = { add_tech_bonus = { name = industry_bonus bonus = 0.5 uses = 1 } } }
+	focus = { id = TECH_FOCUS_5 icon = GFX_goal_generic_scientific x = 16 y = 6 prerequisite = { focus = TECH_FOCUS_4 } cost = 10 completion_reward = { add_research_slot = 1 } }
+	focus = { id = TECH_FOCUS_6 icon = GFX_goal_generic_scientific x = 16 y = 7 prerequisite = { focus = TECH_FOCUS_5 } cost = 10 completion_reward = { add_tech_bonus = { name = nuclear_bonus bonus = 0.5 uses = 1 } } }
+	focus = { id = TECH_FOCUS_7 icon = GFX_goal_generic_scientific x = 16 y = 8 prerequisite = { focus = TECH_FOCUS_6 } cost = 10 completion_reward = { add_research_slot = 1 } }
+	focus = { id = TECH_FOCUS_8 icon = GFX_goal_generic_scientific x = 16 y = 9 prerequisite = { focus = TECH_FOCUS_7 } cost = 10 completion_reward = { add_tech_bonus = { name = jet_bonus bonus = 0.5 uses = 1 } } }
+	focus = { id = TECH_FOCUS_9 icon = GFX_goal_generic_scientific x = 16 y = 10 prerequisite = { focus = TECH_FOCUS_8 } cost = 10 completion_reward = { add_research_slot = 1 } }
+	focus = { id = TECH_FOCUS_10 icon = GFX_goal_generic_scientific x = 16 y = 11 prerequisite = { focus = TECH_FOCUS_9 } cost = 10 completion_reward = { add_tech_bonus = { name = computing_bonus bonus = 0.5 uses = 1 } } }
+
+	# --- Secret Branch ---
+	focus = {
+		id = ESTABLISH_SPY_NETWORK
+		icon = GFX_goal_generic_intelligence_agency
+		x = 18 y = 0
+		cost = 10
+		completion_reward = {
+			add_spy = 1
+			add_intel_network_gain = 0.10
+		}
+	}
+	focus = {
+		id = STAGE_COUP
+		icon = GFX_goal_generic_coup
+		x = 18 y = 1
+		prerequisite = { focus = ESTABLISH_SPY_NETWORK }
+		cost = 10
+		completion_reward = {
+			# Placeholder for coup effect
+		}
+	}
+	// ...more focuses...
+
+	# Add 10 more generic secret focuses
+	focus = { id = SECRET_FOCUS_1 icon = GFX_goal_generic_intelligence_agency x = 18 y = 2 prerequisite = { focus = STAGE_COUP } cost = 10 completion_reward = { add_spy = 1 } }
+	focus = { id = SECRET_FOCUS_2 icon = GFX_goal_generic_intelligence_agency x = 18 y = 3 prerequisite = { focus = SECRET_FOCUS_1 } cost = 10 completion_reward = { add_intel_network_gain = 0.05 } }
+	focus = { id = SECRET_FOCUS_3 icon = GFX_goal_generic_intelligence_agency x = 18 y = 4 prerequisite = { focus = SECRET_FOCUS_2 } cost = 10 completion_reward = { add_spy = 1 } }
+	focus = { id = SECRET_FOCUS_4 icon = GFX_goal_generic_intelligence_agency x = 18 y = 5 prerequisite = { focus = SECRET_FOCUS_3 } cost = 10 completion_reward = { add_intel_network_gain = 0.05 } }
+	focus = { id = SECRET_FOCUS_5 icon = GFX_goal_generic_intelligence_agency x = 18 y = 6 prerequisite = { focus = SECRET_FOCUS_4 } cost = 10 completion_reward = { add_spy = 1 } }
+	focus = { id = SECRET_FOCUS_6 icon = GFX_goal_generic_intelligence_agency x = 18 y = 7 prerequisite = { focus = SECRET_FOCUS_5 } cost = 10 completion_reward = { add_intel_network_gain = 0.05 } }
+	focus = { id = SECRET_FOCUS_7 icon = GFX_goal_generic_intelligence_agency x = 18 y = 8 prerequisite = { focus = SECRET_FOCUS_6 } cost = 10 completion_reward = { add_spy = 1 } }
+	focus = { id = SECRET_FOCUS_8 icon = GFX_goal_generic_intelligence_agency x = 18 y = 9 prerequisite = { focus = SECRET_FOCUS_7 } cost = 10 completion_reward = { add_intel_network_gain = 0.05 } }
+	focus = { id = SECRET_FOCUS_9 icon = GFX_goal_generic_intelligence_agency x = 18 y = 10 prerequisite = { focus = SECRET_FOCUS_8 } cost = 10 completion_reward = { add_spy = 1 } }
+	focus = { id = SECRET_FOCUS_10 icon = GFX_goal_generic_intelligence_agency x = 18 y = 11 prerequisite = { focus = SECRET_FOCUS_9 } cost = 10 completion_reward = { add_intel_network_gain = 0.05 } }
+
+	# --- Regional Branch ---
+	focus = {
+		id = FORTIFY_NORTHERN_BORDERS
+		icon = GFX_goal_generic_fortify
+		x = 20 y = 0
+		cost = 10
+		completion_reward = {
+			add_building_construction = { type = bunker level = 3 state = northern_states instant_build = yes }
+		}
+	}
+	focus = {
+		id = EXPLOIT_COLONIAL_RESOURCES
+		icon = GFX_goal_generic_colonial
+		x = 20 y = 1
+		prerequisite = { focus = FORTIFY_NORTHERN_BORDERS }
+		cost = 10
+		completion_reward = {
+			add_resource_gain_efficiency = 0.10
+		}
+	}
+	// ...more focuses...
+
+	# Add 10 more generic regional focuses
+	focus = { id = REGIONAL_FOCUS_1 icon = GFX_goal_generic_colonial x = 20 y = 2 prerequisite = { focus = EXPLOIT_COLONIAL_RESOURCES } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.01 } }
+	focus = { id = REGIONAL_FOCUS_2 icon = GFX_goal_generic_colonial x = 20 y = 3 prerequisite = { focus = REGIONAL_FOCUS_1 } cost = 10 completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	focus = { id = REGIONAL_FOCUS_3 icon = GFX_goal_generic_colonial x = 20 y = 4 prerequisite = { focus = REGIONAL_FOCUS_2 } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.01 } }
+	focus = { id = REGIONAL_FOCUS_4 icon = GFX_goal_generic_colonial x = 20 y = 5 prerequisite = { focus = REGIONAL_FOCUS_3 } cost = 10 completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	focus = { id = REGIONAL_FOCUS_5 icon = GFX_goal_generic_colonial x = 20 y = 6 prerequisite = { focus = REGIONAL_FOCUS_4 } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.01 } }
+	focus = { id = REGIONAL_FOCUS_6 icon = GFX_goal_generic_colonial x = 20 y = 7 prerequisite = { focus = REGIONAL_FOCUS_5 } cost = 10 completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	focus = { id = REGIONAL_FOCUS_7 icon = GFX_goal_generic_colonial x = 20 y = 8 prerequisite = { focus = REGIONAL_FOCUS_6 } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.01 } }
+	focus = { id = REGIONAL_FOCUS_8 icon = GFX_goal_generic_colonial x = 20 y = 9 prerequisite = { focus = REGIONAL_FOCUS_7 } cost = 10 completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	focus = { id = REGIONAL_FOCUS_9 icon = GFX_goal_generic_colonial x = 20 y = 10 prerequisite = { focus = REGIONAL_FOCUS_8 } cost = 10 completion_reward = { add_resource_gain_efficiency = 0.01 } }
+	focus = { id = REGIONAL_FOCUS_10 icon = GFX_goal_generic_colonial x = 20 y = 11 prerequisite = { focus = REGIONAL_FOCUS_9 } cost = 10 completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+
+	# Cross-branch dependency example
+	focus = {
+		id = ADVANCED_TANK_FACTORIES
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 11 y = 2
+		prerequisite = { focus = FIVE_YEAR_PLAN }
+		cost = 10
+		completion_reward = {
+			add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+		}
+	}
+	// ...rest of the tree...
+}

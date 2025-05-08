@@ -1,0 +1,13 @@
+# filepath: c:\Users\bilal\OneDrive\Documents\Paradox Interactive\Hearts of Iron IV\mod\mappies\common\units\00_equal_footing_units.txt
+division_templates = {
+    infantry_division = {
+        name = "Infantry Division"
+        regiments = {
+            infantry = 9
+        }
+        support = {
+            engineer = 1
+        }
+    }
+    # Add more templates as needed
+}

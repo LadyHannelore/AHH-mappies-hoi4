@@ -1,0 +1,13 @@
+# filepath: c:\Users\bilal\OneDrive\Documents\Paradox Interactive\Hearts of Iron IV\mod\mappies\common\units\equipment\00_equal_footing_equipment.txt
+allowed_equipment = {
+    infantry_equipment_1
+    support_equipment_1
+    artillery_equipment_1
+    light_tank_equipment_1
+    fighter_equipment_1
+    tactical_bomber_equipment_1
+    destroyer_equipment_1
+    submarine_equipment_1
+    cruiser_equipment_1
+    # Add more as needed
+}
